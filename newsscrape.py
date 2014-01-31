@@ -30,7 +30,7 @@ def get_words(url):
 
 coords={}
 
-tileset='http://{s}.tile.cloudmade.com/c4b88afd12b34ea39facebea75c281fe/997/256/{z}/{x}/{y}.png'
+tileset='http://{s}.tile.cloudmade.com/<api_key>/997/256/{z}/{x}/{y}.png'
 
 map1=folium.Map(location=[-1.2667,36.8], zoom_start=12, tiles=tileset, attr='My Data Attribution')
 
