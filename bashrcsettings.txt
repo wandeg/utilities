@@ -1,0 +1,10 @@
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Envs
+source /usr/local/bin/virtualenvwrapper.sh
+
+export PATH=$HOME/google_appengine:$PATH
+alias em_dev='dev_appserver.py ~/git/echomobile'
+alias em_deploy='appcfg.py update ~/git/echomobile'
+alias em_rollback='appcfg.py rollback ~/git/echomobile'
+alias build_react='cd ~/git/echomobile/js/react && jsx --watch src/ build/'
+alias upgrade_programs='sudo apt-get update && sudo apt-get upgrade'
