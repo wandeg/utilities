@@ -30,7 +30,8 @@ with open('tests.sql') as sqlfile:
 		writer = csv.writer(outfile)
 		writer.writerow(['line','plan','time'])
 		for line in sqlfile:
-			cur.execute(line)
+			query = 'EXPLAIN ANALYZE '+line.strip()
+			cur.execute(query)
 			data = cur.fetchall()
 			plan = data[0]
 			time = data[1]
